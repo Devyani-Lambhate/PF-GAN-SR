@@ -16,10 +16,10 @@ you can run particle_filter_ostia_gen.py with the downscaling parameter as an ar
 ## Evaluation
 Two error metrics are used to assess the skill of the new PF-GAN-SR, bi-cubic interpolation and SRGAN as follows
 1. SSIM (structural Similarity score)
-2. RMSE (Root mean square error)
+2. RMSE (Root mean square error) </br>
 Use SSIM_PSNR_MSSSIM.py to get the evaluation metrics
 
 ## Reference
-[1] D. Lambhate and D. N. Subramani, "Super-Resolution of Sea Surface Temperature Satellite Images," Global Oceans 2020: Singapore – U.S. Gulf Coast, 2020, pp. 1-7, doi: 10.1109/IEEECONF38699.2020.9389030.
+[1] D. Lambhate and D. N. Subramani, "Super-Resolution of Sea Surface Temperature Satellite Images," Global Oceans 2020: Singapore – U.S. Gulf Coast, 2020, pp. 1-7, doi: 10.1109/IEEECONF38699.2020.9389030. </br>
 [2] Karras, Tero, et al. "Progressive growing of gans for improved quality, stability, and variation." arXiv preprint arXiv:1710.10196 (2017).
 
