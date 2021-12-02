@@ -7,7 +7,7 @@ We used the 5.5 km resolution OSTIA SST data set from 2006 to 2019 (total of 502
 
 ## PF-GAN-SR
 Our algorithm has two different components: GAN and particle filter 
-1. First a GAN is trained to generate more samples from the prior probability distribution of high resolution images
-2. Then a particle filter algorithm is used to generate the posterior from the samples generated during step 1 and the input low resolution field.
+1. First a GAN is trained to generate more samples from the prior probability distribution of high resolution images.<br>
+We used a Pro-GAN arcitecture for our experiments. To train the proGAN first save all your data in a single directory. Then use ProGAN/progressive_gan.py
+2. Then a particle filter algorithm is used to generate the posterior from the samples generated during step 1 and the input low resolution field.</br>
 
-1. To generate samples we used a Pro-GAN arcitecture. 
