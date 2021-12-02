@@ -8,6 +8,14 @@ We used the 5.5 km resolution OSTIA SST data set from 2006 to 2019 (total of 502
 ## PF-GAN-SR
 Our algorithm has two different components: GAN and particle filter 
 1. First a GAN is trained to generate more samples from the prior probability distribution of high resolution images.<br>
-We used a Pro-GAN arcitecture for our experiments. To train the proGAN first save all your data in a single directory. Then use ProGAN/progressive_gan.py
+We used a Pro-GAN arcitecture for our experiments. To train the proGAN first save all your data in a single directory. Then use ProGAN/progressive_gan.py </br>
+use FID_score.py to evaluate the results from GAN 
 2. Then a particle filter algorithm is used to generate the posterior from the samples generated during step 1 and the input low resolution field.</br>
+you can run particle_filter_ostia_gen.py with the downscaling parameter as an argument.
+
+## Evaluation
+Two error metrics are used to assess the skill of the new PF-GAN-SR, bi-cubic interpolation and SRGAN as follows
+1. SSIM (structural Similarity score)
+2. RMSE (Root mean square error)
+Use SSIM_PSNR_MS-SSIM.py to get the evaluation metrics
 
