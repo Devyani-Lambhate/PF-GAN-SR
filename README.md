@@ -11,13 +11,13 @@ Our algorithm has two different components: GAN and particle filter
 We used a Pro-GAN arcitecture for our experiments. To train the proGAN first save all your data in a single directory. Then use ProGAN/progressive_gan.py. </br>
 One can use FID_score.py to evaluate the results from GAN 
 2. Then a particle filter algorithm is used to generate the posterior from the samples generated during step 1 and the input low resolution field.</br>
-you can run particle_filter_ostia_gen.py with the downscaling parameter as an argument.
+you can run particle_filter_ostia_gen.py with the downscaling ratio as an argument. We experimented for the following values of downscaling ratios: 4,8,16 and 32
 
 ## Evaluation
-Two error metrics are used to assess the skill of the new PF-GAN-SR, bi-cubic interpolation and SRGAN as follows
+Two error metrics are used to assess the skill of the new PF-GAN-SR, bi-cubic interpolation and SRGAN 
 1. SSIM (structural Similarity score)
 2. RMSE (Root mean square error) </br>
-Use SSIM_PSNR_MSSSIM.py to get the evaluation metrics
+Use SSIM_PSNR_MSSSIM.py to get these evaluation metrics
 
 ## Reference
 [1] D. Lambhate and D. N. Subramani, "Super-Resolution of Sea Surface Temperature Satellite Images," Global Oceans 2020: Singapore – U.S. Gulf Coast, 2020, pp. 1-7, doi: 10.1109/IEEECONF38699.2020.9389030. </br>
